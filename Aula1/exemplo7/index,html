@@ -1,0 +1,16 @@
+<!DOCTYPE html >
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Exemplo 7</title>
+    </head>
+    
+    <body>
+        <h1>File à Cavalo</h1>
+        <p>Filé com <b>dois</b> ovos fritos</p>
+        <h1>File à Carroça</h1>
+        <p>Filé com <i><b>quatro</b></i> ovos fritos</p>
+    </body>
+    
+</html>
