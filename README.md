@@ -1,2 +1,2 @@
 # Curso-Html
-Arquivos do Curso Html5
+Arquivos do Curso de Fundamentos da Construção de Sites
