@@ -1,0 +1,14 @@
+<!DOCTYPE html >
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Exemplo03</title>
+		<link rel="stylesheet" type="text/css" href="geral.css">
+	</head>
+	<body>
+		<!--Hyperlinks-->
+		<p>
+			<a href="http://www.ufsm.br">Site da UFSM</a>
+		</p>
+	</body>
+</html>
