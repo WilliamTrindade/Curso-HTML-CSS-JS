@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	border: 0;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	color: white;
+}
+body{
+	background-color: #000000;
+}
+.genero{
+	text-align: center;
+}
+.genero img{
+	width: 900px;
+	height: auto;
+}
+.genero h1{
+	font-size: 42px;
+	border-left: red 2px solid;
+	margin: 4%;
+}
+.genero p{
+	font-size: 14px;
+	margin: 2%;
+}
+.genero h2{
+	font-size: 28px;
+	border-left: red 2px solid;
+	margin: 2%;
+	text-align: left;
+}
+ul{
+	text-decoration: none;
+	text-align: left;
+}
+ul li a{
+	transition: 0.5s;
+	text-decoration: none;
+}
+ul li a:hover{
+	color:blue;
+}
