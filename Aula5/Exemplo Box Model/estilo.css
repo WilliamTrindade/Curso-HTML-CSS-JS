@@ -1,0 +1,14 @@
+body {
+	color: #000000;
+	background-color: #ffffff;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 14px;
+	text-align: justify;
+	margin: 25px;
+	border: 4px solid #0000ff;
+	padding: 50px;
+	width:1200px;
+}
+h1 {
+	font-size: 35px;
+}
