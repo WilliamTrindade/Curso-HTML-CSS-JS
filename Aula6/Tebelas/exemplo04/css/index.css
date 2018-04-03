@@ -1,0 +1,17 @@
+body {
+	color: #000000;
+}
+table {
+	margin-left: 500px;
+	margin-right: 500px;
+	border: 1px solid #ff0000;
+	caption-side: bottom;
+}
+td, th {
+	border: 1px solid #ff0000;
+	padding: 10px;
+}
+caption {
+	font-style: italic;
+	padding-top: 10px; 
+}
