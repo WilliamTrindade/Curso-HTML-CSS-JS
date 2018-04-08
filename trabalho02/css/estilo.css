@@ -1,6 +1,6 @@
 body{
 	font-family: Arial,sans serif;
-	background: #ffffff;
+	background-color: #ffffff; //errado(corrigido)
 	color:#000000;
 	font-size: 16px;
 }
