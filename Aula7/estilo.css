@@ -1,0 +1,31 @@
+body{
+	background-color: #cccccc;
+	color: #000000;
+	font-size: 16px;
+	font-family: sans-serif;
+	text-align: justify;
+}
+#container{
+	padding: 30px;
+}
+#caixa1{
+	margin: 20px;
+	width: 300px;
+	height: 500px;
+	border:solid #000000 4px;
+	background-color: #0000ff;
+}
+#caixa2{
+	margin: 20px;
+	width: 300px;
+	height: 500px;
+	border:solid #000000 4px;
+	background-color: #ffff00;
+}
+#caixa3{
+	margin: 20px;
+	width: 300px;
+	height: 500px;
+	border:solid #000000 4px;
+	background-color: #ff0000;
+}
