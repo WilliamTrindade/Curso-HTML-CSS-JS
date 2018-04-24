@@ -1,0 +1,46 @@
+div {
+	width: 100px;
+	height: 100px;
+	/* Se o texto tiver uma única linha
+    Para centralizar o texto na div pode-se usar um line-height igual à altura
+	   dela. 
+	*/
+	line-height: 100px;
+	text-align: center;
+	font-size: 25px;
+    background-color: #ff0000;
+}
+
+#container {
+	width: 600px;
+    background-color: #cccccc;
+    color:#000000;
+  
+}
+
+.um {
+	background-color: #ff0000;
+  }
+
+.dois {
+	background-color: #0000ff;
+}
+
+.tres {
+	width: 200px;
+	height: 200px;
+    line-height: 200px;
+	background-color: #00ff00;
+   
+}
+
+.quatro {
+	background-color: #ffff00;
+    color:#ff0000;
+    
+}
+
+.cinco {
+	background-color: #00ffff;
+    
+    }
