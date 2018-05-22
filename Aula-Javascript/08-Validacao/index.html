@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+
+	<head>
+		<meta charset="utf-8" />
+		<title>JavaScript - Validando Formulário</title>
+		<script>
+			function validar() {
+				var v_nome = form1.nome.value;
+				if (v_nome == "") {
+					alert('Preencha o campo com seu nome');
+					form1.nome.focus();
+					return false; 
+				}
+				if (v_nome.length < 5) {
+					alert('Digite seu nome completo');
+					form1.nome.focus();
+					return false; 
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1>Cadastro</h1>
+		<form id="form1" method = "post" action = "">
+			<p>
+				<label for="nome">Nome:</label>
+				<input id = "nome" type = "text" size = "100" />
+			</p>
+			<p>
+				<label for="email">E-mail:</label>
+				<input id = "email" type = "text" size = "50" />
+			</p>
+			<p>
+				<input type = "submit" value = "Enviar dados" onclick="return validar()"/>
+				<input type = "reset" value = "Limpar a tela" />
+			</p>
+		</form>
+	</body>
+	
+</html>
