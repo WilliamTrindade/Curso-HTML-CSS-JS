@@ -1,0 +1,24 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>JavaScript - Exemplo</title>
+	</head>
+
+	<body>
+		<h1>Trocando conteudo com Javascript e estilo</h1>
+		<p id="trocar"> Com JavaScript posso trocar o conteudo. </p>
+		<button type="button" onclick="fTrocar()"> Clique para Trocar! </button>
+
+		<script>
+
+			function fTrocar(){
+				x=document.getElementById("trocar"); // Encontrar elemento
+				x.innerHTML="Trocar!"; // Novo conteudo
+				document.getElementById("trocar").style.color = "red";
+			}
+			
+		</script>
+	</body>
+
+</html>
