@@ -1,52 +1,51 @@
 <!doctype html>
 <html lang="pt-br">
+	
 	<head>
 		<meta charset="UTF-8">
 		<title>Cáculo do Salário</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="js/script.js"></script>
+        	<script src="js/script.js"></script>
 	</head>
+	
 	<body>
-        <div id="container">
-            <header>
-                <h1>Cáculo do Salário</h1>
-            </header>
-            <main>
-                <section>
-                    
-                    <form method="post" action="processa.html">
-                        <fieldset>
-                            <legend>Dados pessoais</legend>
-                            <label for="campo-nome">Nome:</label>
-                            <input id="campo-nome" type="text" size=50 placeholder="digite o nome">
-                        </fieldset>
-                        <fieldset>
-                            <legend id="123">Rendimento</legend>
-                            <label for="salario">Salario:</label>
-                            <input id="salario" type="text"  size=5>
-                            <label for="dependentes">Dependentes:</label>
-                            <input id="dependentes" type="text" size=5>
-                        </fieldset>
-                        <fieldset>
-                            <legend id="123">Resumo</legend>
-                            <label for="salariobruto">Salario Bruto:</label>
-                            <input id="salariobruto" type="text"  size=5 readonly="yes">
-                            <label for="descontos">Descontos:</label>
-                            <input id="descontos" type="text"  size=5 readonly="yes">
-                            <label for="salarioliquido">Salario Liquido:</label>
-                            <input id="salarioliquido" type="text" size=5 readonly="yes">
-                        </fieldset>
+		<div id="container">
+		    <header>
+			<h1>Cáculo do Salário</h1>
+		    </header>
+		    <main>
+			<section>
 
-                        
-                    </form>
-                    <button id="calcula-imcs" onclick="calcula(document.getElementById('salario').value,document.getElementById('dependentes').value)"> Calcula! </button>
-                </section>
-            </main>
-        </div>
-       
+			    <form method="post" action="processa.html">
+				<fieldset>
+				    <legend>Dados pessoais</legend>
+				    <label for="campo-nome">Nome:</label>
+				    <input id="campo-nome" type="text" size=50 placeholder="digite o nome">
+				</fieldset>
+				<fieldset>
+				    <legend id="123">Rendimento</legend>
+				    <label for="salario">Salario:</label>
+				    <input id="salario" type="text"  size=5>
+				    <label for="dependentes">Dependentes:</label>
+				    <input id="dependentes" type="text" size=5>
+				</fieldset>
+				<fieldset>
+				    <legend id="123">Resumo</legend>
+				    <label for="salariobruto">Salario Bruto:</label>
+				    <input id="salariobruto" type="text"  size=5 readonly="yes">
+				    <label for="descontos">Descontos:</label>
+				    <input id="descontos" type="text"  size=5 readonly="yes">
+				    <label for="salarioliquido">Salario Liquido:</label>
+				    <input id="salarioliquido" type="text" size=5 readonly="yes">
+				</fieldset>
+
+
+			    </form>
+			    <button id="calcula-imcs" onclick="calcula(document.getElementById('salario').value,document.getElementById('dependentes').value)"> Calcula! </button>
+			</section>
+		    </main>
+		</div>
 	</body>
+	
 </html>
-
-
-
