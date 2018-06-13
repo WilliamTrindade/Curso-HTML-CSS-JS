@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+	<html lang="pt-br">
+
+		<head>
+			<meta charset="UTF-8">
+			<script src="js/codigo.js"></script>
+			<link rel="stylesheet" href="css/reset.css">
+			<link rel="stylesheet" href="css/estilo.css">
+			<title>1ª SASI</title>
+		</head>
+
+		<body>
+
+			<div id="container">
+				<!--Cabeçalho-->
+				<header>
+					<img src="img/sasi.jpg" alt="Banner da Semana Acadêmica do Curso de Sistemas para Internet">
+				</header>
+				
+				
+				<!--seção Principal-->
+				<section>
+					<h1>Palestras</h1>
+					<article>
+						<h2>Palestra 1: Business Model CANVAS</h2>
+						<p>Lorem ipsum <span>dolor sit amet</span>, consectetur adipisicing elit. Commodi odit, placeat doloribus corrupti dolorem magnam possimus ipsa repudiandae tenetur, neque incidunt esse magni vel numquam libero maxime. Dolor, itaque, nostrum.</p>
+					</article>
+					<article>
+						<h2>Palestra 2: Startups e Empreendedorismo</h2>
+						<p>Lorem ipsum dolor sit amet, <span>consectetur adipisicing</span> elit. Neque tenetur in vitae nisi, veritatis iure nulla quidem enim fugiat magni. Dolorum mollitia error nisi, iure, ratione praesentium repellat cum nobis.</p>
+					</article>
+				</section>
+<!--formulario-->
+				<aside>
+					<h1>Inscrição</h1>
+					<form method="post" action="processa.html" id="formulario">
+						<fieldset>
+							<legend>Dados do Comprador</legend>
+							<!--nome-->
+							<label for="nome">Nome:</label>
+							<input type="text" placeholder="Nome" size="15" id="nome">
+							<!--Email-->
+							<label for="email">Email</label>
+							<input type="email" placeholder="Email" size="15" id="email">
+						</fieldset>
+
+						<fieldset>
+							<legend>Tipo Vínculo</legend>
+								<p>
+									<select id="vinc" name = "vinculo" onchange="fcompra(document.getElementById('vinc').value)">
+										<option value=0>Vínculo</option>
+										<option value=1>Aluno</option>
+										<option value=2>Servidor</option>
+										<option value=3>Outro</option>
+									</select>
+								</p>
+						</fieldset>
+
+						<fieldset>
+							<legend>Resumo</legend>
+							<label for="total">Total</label>
+							<input type="number" id="total" readonly="yes">
+						</fieldset>
+
+					</form>
+					<button onclick="alerta()">Confirma</button>
+				</aside>
+
+				
+				<!--rodapé-->
+				<footer>
+					<h1>Vale ACG</h1>
+				</footer>
+
+			</div>
+
+		</body>
+
+</html>
