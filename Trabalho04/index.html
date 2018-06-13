@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+			//compra
+			function fcompra(a, b){
+				 var t = a * 50.00 + b * 25.00;
+                 document.getElementById('total').value = parseFloat(t);
+			}
+			function botao(){
+				alert('Compra Confirmada!');
+				document.getElementById('form1').reset()
+				
+			}
+			var i=0;
+			noticias=["MEIA-ENTRADA ÀS SEGUNDAS-FEIRAS","PRÉ-ESTREIAS ÀS SEXTAS-FEIRAS"];
+			var myVar=setInterval(
+				function(){
+					myTimer()
+				},
+				1000
+			);
+			function myTimer(){
+				document.getElementById("footer").innerHTML = noticias[i];
+				i++;
+				if (i>1){
+					i=0;
+				}
+			}
+		</script>
+
+		<title>Ingressos Online</title>
+	</head>
+
+	<body>
+		<div id="container">
+			
+			<header>
+				<h1>Ingressos Online</h1>
+			</header>
+			
+			<aside>
+				<formform id="form1" method="post" action="processa.html">
+                        <fieldset>
+                            <legend>Dados do Comprador</legend>
+                            <label for="campo-nome">Nome:</label>
+                            <input id="campo-nome" type="text" size=30 placeholder="digite seu nome"><br>
+                            <label for="campo-num">Cartão:</label>
+                            <input id="campo-num" type="number" size=30 placeholder="digiteo número do cartão">				
+                        </fieldset>
+						
+                        <fieldset>
+                            <legend>Ingressos</legend>
+                            <label for="filme">Filme:</label>
+                            <select>
+                            	<option>
+                            		A garota do Trem
+                            	</option>
+                            	<option>
+                            		Dr. Estranho
+                            	</option>
+                            	<option>
+                            		O contador
+                            	</option>
+                            	<option>
+                            		Trolls
+                            	</option>
+                            </select> <br>
+                            <label for="horario">Horário:</label>
+                            <input id="horario" type="time"  size=15> <br>
+                            <label for="inteira">Inteira:</label>
+                            <input id="inteira" type="text" placeholder="Inteira" size=5 value="0" oninput="fcompra(document.getElementById('inteira').value,document.getElementById('meia').value)"> <br> 
+                            <label for="meia">Meia:</label>
+                            <input id="meia" type="number" placeholder="Meia" size=15> <br>
+
+
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Resumo</legend>
+                            <label for="total">Total:</label>
+                            <input id="total" type="number" placeholder="Total" readonly="yes" size=15>
+                        </fieldset>
+						
+						<button id="calcula" onclick="botao()">Compra!</button>
+                    </form>
+			</aside>
+
+			<article>
+				<h2>A garota do Trem</h2>
+				<img src="img/trem.jpg" alt="A garota do Trem" width="95" height="84">
+				<p>Baseado no romance best-seller de Paula Hawkins. No suspense, Rachel, que está desolada por seu divórcio recente, passa seu tempo indo para o trabalho fantasiando sobre o casal aparentemente perfeito que vive em uma casa onde seu trem passa todos os dias, até que em uma manhã ela vê algo chocante acontecer lá e se torna parte de um mistério que se desdobra</p>
+			</article>
+			<article>
+				<h2>Dr. Estranho</h2>
+				<img src="img/estranho.jpg" alt="A garota do Trem" width="95" height="84">
+				<p>Um cirurgião com sua carreira destruída, volta a ter vontade de viver depois que um feiticeiro o treina para defender o mundo do mal.</p>
+			</article>
+			<article>
+				<h2>O contador</h2>
+				<img src="img/contador.jpg" alt="A garota do Trem" width="95" height="84">
+				<p>Christian Wolff é um gênio da matemática que tem mais afinidade com os números do que com pessoas. Sua vida pacata parece se resumir à gerência de um pequeno escritório de contabilidade em Atlanta. O burocrático negócio, no entanto, serve apenas como fachada para seu verdadeiro trabalho: ele manipula os números para algumas das organizações criminosas mais perigosas do mundo.</p>
+			</article>
+			<article>
+				<h2>Trolls</h2>
+				<img src="img/trolls.jpg" alt="A garota do Trem" width="95" height="84">
+				<p>Ramo parte para uma jornada de descobertas e aventuras ao lado de Poppy, líder dos Trolls. Inicialmente inimigos, conforme os desafios são superados eles descobrem que no fundo combinam.</p>
+			</article>
+				
+			<footer id="footer">
+				
+			</footer>
+				
+		</div>
+	</body>
+
+</html>
