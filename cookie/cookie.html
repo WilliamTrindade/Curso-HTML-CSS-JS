@@ -1,0 +1,68 @@
+<!DOCTYPE html >
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <title>Aula final - cookies</title>
+        
+    </head>
+    
+    <body onload="checkCookie()">
+        <h1>Usando Cookies</h1>
+        <form id="form1" method="post" action=" ">
+                        	
+                        <fieldset>
+							
+                            <legend>Dados pessoais</legend>
+							
+				<p>
+					<label for="idade">Idade:</label>
+					<input id="idade" type="text" size=5 value="0" oninput="setCookie('idade',document.getElementById('idade').value,300)">
+				</p>
+								
+                        </fieldset>
+
+                        
+						
+          </form>
+          <script>
+          	 
+		function setCookie(cname,cvalue,cdays) {
+
+								
+				  				
+				var d = new Date();
+    				d.setTime(d.getTime() + (cdays*24*60*60*1000));
+    				var expires = "expires="+ d.toUTCString();
+    				document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+				}
+
+		function checkCookie(){
+				var idade=getCookie("idade");
+				if (idade != "") {
+        				alert("Sua Idade é " + idade);
+
+					}
+				}
+
+
+
+		function getCookie(cname) {
+    			var name = cname + "=";
+    			var ca = document.cookie.split(';');
+    			for(var i = 0; i < ca.length; i++) {
+        		var c = ca[i];
+        		while (c.charAt(0) == ' ') {
+            			c = c.substring(1);
+        			}
+        			if (c.indexOf(name) == 0) {
+            				return c.substring(name.length, c.length);
+        				}
+    				}
+    			return "";
+					}
+
+          </script>
+
+    </body>
+
+</html>
