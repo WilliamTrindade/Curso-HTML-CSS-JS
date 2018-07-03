@@ -1,0 +1,426 @@
+/**
+ In this file the class presentation and the class we-mission is the same code.
+**/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+}
+body {
+    margin: 0 auto;
+    font-family:sans-serif;
+}
+
+/*general*/
+/*titles*/
+.title-one{
+    width: 90%;
+    font-size: 30px;
+    margin-top:5px;
+    border-left: #00ffcc 10px solid;
+    color: rgba(0, 0, 0, 0.72);
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    float: left;
+    margin:4%;
+}
+/*titles*/
+/*div 01*/
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: left;
+    height:auto;
+}
+.text-box{
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    float: left;
+    margin:4%;
+    transition:0.5s;
+}
+.text-box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.398);
+}
+.text-description{
+    padding: 7px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size:25px;
+    float: left;
+}
+/*div 01*/
+/*div02*/
+.box-type2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: left;
+    height:auto;
+}
+.text-box-type2{
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    float: left;
+    border:rgb(223, 223, 223) 0px solid;
+    margin:4%;
+    transition:0.5s;
+    border-left: 10px white solid;
+}
+.text-box-type2:hover{
+    border-left: 10px rgb(0, 0, 0) solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.398);
+}
+.text-description{
+    padding: 7px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size:25px;
+    float: left;
+}
+/*div02*/
+/*others id and class*/
+#ling{   
+    margin-top:4px;
+    text-align: center;
+    font-family: arial;
+}
+/*others id and class*/
+/*general*/
+
+/*paralax*/
+.paralax{
+    margin-top:20px;
+    background-size:cover;
+    width: 100%;
+    float: left;
+    background-attachment: fixed;
+    height: 200px;
+    background-image: url("../img/header1.jpg")
+}
+/*paralax*/
+
+/*logotipo*/
+
+.topnav {
+    width: 100%;
+   
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.897);
+}
+.nav-link{
+    font-family: 'Poiret One', cursive;
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 25px ;
+    text-decoration: none;
+    font-size: 17px;
+    transition:0.5s;
+}
+.nav-link:hover {
+    color: #00ffcc;
+}
+.active{
+    margin-left: 4%;
+    float: left;
+}
+.active img{
+    float: left;
+    width: 42px;
+}
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:nth-child(1)) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive .nav-link{
+        color: white;
+    }
+    .topnav.responsive {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/*logotipo*/
+
+/*banner*/
+.banner{
+    background-size:cover;
+    width: 100%;
+    float: left;
+    background-attachment: fixed;
+    background-image:url("../img/header.jpg");
+}
+.banner h1{
+    max-width:100%;
+    background-color: rgba(0, 0, 0, 0.467);
+    padding-left: 10px;
+    border-radius: 1px;
+    font-family: 'Poiret One', cursive;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left:4%;
+    padding-right: 10px;
+    font-size: 50px;
+    color:white;
+    border-left:#00ffcc 10px solid;
+    float:left;
+}
+@media screen and (min-width: 10px) and (max-width: 900px) {
+    .banner h1{
+        font-size: 40px;
+    }
+    
+}
+/*banner*/
+
+/*we apps*/
+.box-one{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    float: left;
+    background: #0f0f0f;
+}
+@media screen and (min-width: 10px) and (max-width: 900px) {
+    .project{
+        width: 100%;
+    }
+    .box-one{
+        display: flex;
+        flex-direction: column;
+        
+    }    
+}
+.project{
+    text-align: center;
+    max-width:100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width:250px;
+    height: 140px;
+    float: left;
+    transition:0.5s;
+    margin:10px;
+    border-radius: 10px;
+    border:#0f0f0f 5px solid;
+}
+.project a{
+    justify-content: center;
+    color:#000000;
+    text-decoration: none;
+    float: left;
+   text-align: center;
+}
+.project:hover{
+    border:#00ffcc 5px solid;
+    border-radius: 0px;
+}
+/*button*/
+.box-two{
+    background-color: #0f0f0f;
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-see-more{
+    margin: 10px;
+    padding: 15px;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-left: transparent 0px solid;
+    border-top: #00ffcc 2px solid;
+    border-bottom: #00ffcc 2px solid;
+    border-right: #00ffcc 2px solid;
+    width: auto;
+    height: auto;
+    transition:0.5s;
+}
+#button-see-more:hover{
+    border-left: #00ffcc 20px solid;
+    background-color: #00ffcc;
+    color: black;
+}
+/*button*/
+
+/*how we do it*/
+#languages-div{
+    text-align:center;
+    width: 100%;
+    float: left;
+    align-items: center;
+    align-content: center;
+
+}
+#languages-div img{
+    padding:10px;
+    width: 7%;
+    height: auto;
+    transition: 0.5s;
+}
+#languages-div img:hover{
+    width: 8%;
+    padding:0;
+}
+/*how we do it*/
+
+/*footer*/
+.footer{
+    margin-top:30px;
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+}
+#link{
+    float: left;
+    height: auto;
+    width: auto;
+    margin:4%;
+}
+#link h1{
+    margin-bottom: 2px;
+    border:#00ffcc 1px solid;
+    font-size:15px;
+    border-left:5px solid transparent;
+    padding:1px;
+    width:100%;
+    transition: 0.5s;
+    text-decoration: none;
+    color:white;
+    font-family: arial;
+}
+#link li a{
+    float: left;
+    border-left:5px solid transparent;
+    padding:2px;
+    width:100%;
+    transition: 0.5s;
+    text-decoration: none;
+    color:white;
+    font-family: arial;
+}
+#link li a:hover{
+    border-left:5px solid rgb(0, 0, 0);
+    padding-left:10px;
+    background-color:#00ffcc;
+}
+#link ul li{
+    list-style: none;
+}
+.copy{
+    border-top: 1px solid #00ffcc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: arial;
+    color:white;
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: rgb(44, 44, 44);
+}
+.about-list{
+    float: left;
+    width: 80%;
+    margin:4%;
+}
+.containers{
+    width: 100%;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+.right{
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+.content{
+    float:left;
+    width: 50%;
+}
+@media screen and (max-width: 600px) {
+    .content{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
+.btn{
+    margin: 2%;
+}
+.email{
+    margin:2%;
+}
+p{
+    margin: 4%;
+}
+#sobre img{
+    width: 50%;
+    margin-left: 4%;
+}
+#sobre figcaption{
+    margin-left: 4%;
+}
+#pedido{
+    margin-left: 4%;
+}
+#soft{
+    width: 100%;
+    float: left;
+}
