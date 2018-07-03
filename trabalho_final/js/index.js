@@ -20,3 +20,8 @@ function myFunction() {
 function valida(){
     alert('Parabéns agora você vai receber novidades do mundo do software no seu e-mail');
 }
+function enviar(){
+    alert('E-mail enviado');
+    x = document.getElementById("pedido");
+    x.reset();
+}
